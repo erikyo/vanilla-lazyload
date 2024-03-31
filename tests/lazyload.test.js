@@ -1,7 +1,8 @@
 import { JSDOM } from 'jsdom';
 import * as defaults from '../src/defaults';
-import LazyLoad from '../src/LazyLoad';
+import LazyLoad from '../src/lazyload';
 import { getExtendedSettings } from "../src/defaults";
+import { describe, test, expect, beforeEach, afterEach  } from "@jest/globals";
 
 // Mock IntersectionObserver
 class IntersectionObserver {
